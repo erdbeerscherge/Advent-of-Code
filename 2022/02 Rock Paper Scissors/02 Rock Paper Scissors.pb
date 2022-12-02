@@ -1,12 +1,12 @@
 ﻿EnableExplicit
 
-Define isBonusTask = #True
 Enumeration 1
 	#rock
 	#paper
 	#scissors
 EndEnumeration
 NewList readLine$()
+Define isBonusTask = #True
 Define opponent, you, score
 
 If ReadFile(0, "input.txt")
@@ -25,15 +25,15 @@ ForEach readLine$()
 	EndSelect
 	If isBonusTask
 		Select Right(readLine$(), 1)
-			Case "X"
-				Select opponent
+			Case "X"	
+				Select opponent	;mustLose
 					Case #rock		:	you = #scissors
 					Case #paper		:	you = #rock
 					Case #scissors	:	you = #paper
 				EndSelect
-			Case "Y"	:	you = opponent
-			Case "Z"
-				Select opponent
+			Case "Y"	:	you = opponent	;mustDraw
+			Case "Z"	
+				Select opponent	;mustWin
 					Case #rock		:	you = #paper
 					Case #paper		:	you = #scissors
 					Case #scissors	:	you = #rock
@@ -61,7 +61,8 @@ Debug score
 End
 
 ; IDE Options = PureBasic 6.00 LTS (Windows - x64)
-; CursorPosition = 25
+; CursorPosition = 38
+; FirstLine = 16
 ; EnableXP
 ; SubSystem = DirectX9
 ; CompileSourceDirectory
