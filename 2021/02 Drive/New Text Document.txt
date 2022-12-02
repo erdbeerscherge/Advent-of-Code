@@ -1,0 +1,1 @@
+||Hab's mir einfach gemacht, und lese nur das jeweils ganz linke und ganz rechte Zeichen (letzteres umgewandelt in eine Zahl). UCase wandelt den ganzen String in ein UpperCase um, das war nur 'ne Vorsichtsmaßnahme damit ich die Abfrage *safe* generalisieren kann.||
