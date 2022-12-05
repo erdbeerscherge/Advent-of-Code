@@ -42,7 +42,7 @@ If ReadFile(0, "input.txt")
 	CloseFile(0)
 EndIf
 
-;follow instructions
+;BONUS: follow instructions
 ForEach instruction()
 	For count = 1 To instruction()\moveCount
 		ForEach crate()
@@ -76,8 +76,8 @@ For a = 1 To maxPosition
 Next
 End
 ; IDE Options = PureBasic 6.00 LTS (Windows - x64)
-; CursorPosition = 57
-; FirstLine = 40
+; CursorPosition = 75
+; FirstLine = 38
 ; EnableXP
 ; SubSystem = DirectX9
 ; CompileSourceDirectory
