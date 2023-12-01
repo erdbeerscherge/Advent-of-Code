@@ -2,10 +2,10 @@
 
 Define score
 NewList readLine$()
-Define.s readLine$
+Define.s line$
 If ReadFile(0, "input.txt")
 	Repeat
-		readLine$ = ReadString(0)
+		line$ = ReadString(0)
 		AddElement(readLine$())
 		readLine$() = ReadString(0)
 	Until Eof(0)
@@ -15,8 +15,9 @@ EndIf
 Debug score
 End
 
-; IDE Options = PureBasic 6.00 LTS (Windows - x64)
-; CursorPosition = 4
+; IDE Options = PureBasic 6.03 LTS (Windows - x64)
+; CursorPosition = 7
+; Optimizer
 ; EnableXP
 ; SubSystem = DirectX9
 ; CompileSourceDirectory
